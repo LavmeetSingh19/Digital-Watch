@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*=============Digital Watch==============*/
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 25vh;
+  position: relative;
+}
+.digital_watch {
+    background-color: black;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border-color: black;
+  border-style: outset;
+}
+
+#twelve {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#three {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+}
+
+#six {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#nine {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+} 
+
+#twelve,#three,#six, h1{
+color: white;
+}
+
+/*==================Needles Section==================*/
+
+#seconds_needle {
+  height: 40%;
+  top: 5%;
+  width: 1%;
+  right: 50%;
+  position: absolute;
+  background-color: white;
+}
+
+#minute_needle {
+  height: 30%;
+  width: 1.6%;
+  right: 50%;
+  top: 15%;
+  position: absolute;
+  background-color: white;
+}
+#hour_needle {
+    position: absolute;
+    height: 20%;
+    width: 2%;
+    top: 25%;
+    right: 50%;
+    background-color: white;
+}
+
+#hour_needle,
+#minute_needle,
+#seconds_needle {
+  border-radius: 10px;
+  transform-origin: bottom;
+}
